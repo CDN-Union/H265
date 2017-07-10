@@ -11,6 +11,25 @@ Members：金山，网宿，星域，七牛
 
 本github主要交流KSC265在直播领域的应用使用，内容包括rtmp直播推流支持H.265编码，FFmpeg FLV针对H.265进行的扩展规范和相关patch。
 ### 2. FFmpeg 扩展
+#### 2.1 Code
+目录Code/FFmpeg下已经将patch达到了origin/release/3.2等branch上。
+
+当前已经支持的release分支包括：
+* 2.8
+* 3.0
+* 3.1
+* 3.2
+* 3.3
+
+patch位于Code/flv265patch_from_kingsoft.7z压缩包内。
+
+patch涉及的改动包括：
+* libavform/flv.h
+* libavform/flvenc.c
+* libavform/flvdec.c
+
+#### 2.2 Document
+针对FFmpeg flv的扩展，请见[Document/video_file_format_spec_v10_1_ksyun_20170615.doc](Document)
 
 ### 3. KSC265功能
 
@@ -21,7 +40,7 @@ Members：金山，网宿，星域，七牛
 * 解码完备性强，在丢帧及多种网络丢包情况下仍然能成功解码播放，解码速度比openHEVC具有碾压性优势。
 
 #### 3.1 应用场景说明
-![](Docs/images/scenarios.png)
+![](Document/images/scenarios.png)
 
 #### 3.2 体验与试用
 KSC265 Demo体验
@@ -37,7 +56,7 @@ https://github.com/ksvc/ks265codec/tree/master/Android_demo
 
 开播-金山云已经集成了KSC265，Appstore和应用宝均有下载，可以快速下载试用。
  
-![](Docs/images/kaibo.png)
+![](Document/images/kaibo.png)
 
 
 
