@@ -56,7 +56,7 @@ https://github.com/ksvc/ks265codec/tree/master/Android_demo
 
 开播-金山云已经集成了KSC265，Appstore和应用宝均有下载，可以快速下载试用。
  
-![](Document/images/kaibo.png)
+![kaibo](Document/images/kaibo.png)
 
 
 
